@@ -104,244 +104,246 @@ function Invitation() {
 
   return (
     <main className="relative mx-auto max-w-[520px] overflow-hidden font-body text-foreground">
-      {/* HERO */}
-      <section
-        ref={heroRef}
-        className="relative flex flex-col items-center px-6 pt-14 pb-8 text-center"
-      >
-        <div className="animate-[rise-in_1s_ease-out_both]">
-          <h1 className="font-display text-6xl font-light uppercase tracking-[0.35em] text-sage-deep sm:text-7xl">
-            Baby
-          </h1>
-          <p className="-mt-3 font-script text-5xl text-sage sm:text-6xl">Shower</p>
-        </div>
-        <div className="mt-4 flex items-center gap-3 opacity-80 animate-[rise-in_1.2s_ease-out_both]">
-          <span className="h-px w-10 bg-sage/50" />
-          <p className="font-display text-2xl italic text-cocoa sm:text-3xl">
-            Mayra <span className="text-sage">&</span> Carlos
-          </p>
-          <span className="h-px w-10 bg-sage/50" />
-        </div>
-
-        <div className="relative mt-6 w-full float-anim">
-          <img
-            src={heroAnimals}
-            alt="Animales safari acuarela"
-            width={1408}
-            height={912}
-            className="mx-auto w-full max-w-[460px] drop-shadow-[0_20px_40px_oklch(0.55_0.055_145_/0.25)]"
-          />
-        </div>
-      </section>
-
-      {/* COUNTDOWN */}
-      <section className="reveal px-6 py-10 text-center">
-        <div className="paper-card mx-auto rounded-[28px] px-6 py-8">
-          <p className="font-display text-2xl italic text-sage-deep">Sólo faltan</p>
-          <div className="mt-5 flex justify-center gap-2 sm:gap-3">
-            <CountBox value={t.d} label="Días" />
-            <CountBox value={t.h} label="Hrs" />
-            <CountBox value={t.m} label="Min" />
-            <CountBox value={t.s} label="Seg" />
+      {/* HERO — cream band */}
+      <div className="band band-cream torn-bottom relative pb-10">
+        <section
+          ref={heroRef}
+          className="relative flex flex-col items-center px-6 pt-14 pb-4 text-center"
+        >
+          <div className="animate-[rise-in_1s_ease-out_both]">
+            <h1 className="font-display text-6xl font-light uppercase tracking-[0.35em] text-sage-deep sm:text-7xl">
+              Baby
+            </h1>
+            <p className="-mt-3 font-script text-5xl text-sage sm:text-6xl">Shower</p>
           </div>
-          <p className="mt-6 text-sm text-muted-foreground">
-            Para celebrar juntos el
-            <br />
-            <span className="font-display text-lg text-cocoa">
-              sábado 15 de agosto de 2026
-            </span>
-          </p>
-        </div>
-      </section>
-
-      <SectionDivider />
-
-      {/* DATE & TIME */}
-      <section className="reveal px-6 py-8">
-        <p className="text-center text-xs uppercase tracking-[0.35em] text-sage-deep">
-          Guarda la fecha
-        </p>
-        <h2 className="mt-2 text-center font-display text-3xl text-cocoa">
-          Acompáñanos a celebrar
-        </h2>
-        <div className="mt-6 grid grid-cols-2 gap-4">
-          <div className="paper-card rounded-2xl p-5 text-center">
-            <Calendar className="mx-auto h-7 w-7 text-sage-deep" strokeWidth={1.5} />
-            <p className="mt-3 text-[11px] uppercase tracking-[0.25em] text-sage-deep">
-              Fecha
+          <div className="mt-4 flex items-center gap-3 opacity-80 animate-[rise-in_1.2s_ease-out_both]">
+            <span className="h-px w-10 bg-sage/50" />
+            <p className="font-display text-2xl italic text-cocoa sm:text-3xl">
+              Mayra <span className="text-sage">&</span> Carlos
             </p>
-            <p className="mt-2 font-display text-xl leading-tight text-cocoa">
-              Sábado
-              <br />
-              15 de agosto
-              <br />
-              <span className="text-base text-muted-foreground">2026</span>
-            </p>
+            <span className="h-px w-10 bg-sage/50" />
           </div>
-          <div className="paper-card rounded-2xl p-5 text-center">
-            <Clock className="mx-auto h-7 w-7 text-sage-deep" strokeWidth={1.5} />
-            <p className="mt-3 text-[11px] uppercase tracking-[0.25em] text-sage-deep">
-              Hora
-            </p>
-            <p className="mt-2 font-display text-xl leading-tight text-cocoa">
-              3:00 PM
+
+          <div className="relative mt-6 w-full float-anim">
+            <img
+              src={heroAnimals}
+              alt="Animales safari acuarela"
+              width={1408}
+              height={912}
+              className="mx-auto w-full max-w-[460px] drop-shadow-[0_20px_40px_oklch(0.55_0.055_145_/0.25)]"
+            />
+          </div>
+        </section>
+      </div>
+
+      {/* COUNTDOWN — sage band */}
+      <div className="band band-sage torn-bottom relative pt-6 pb-10">
+        <section className="reveal px-6 py-10 text-center">
+          <div className="paper-card mx-auto rounded-[28px] px-6 py-8">
+            <p className="font-display text-2xl italic text-sage-deep">Sólo faltan</p>
+            <div className="mt-5 flex justify-center gap-2 sm:gap-3">
+              <CountBox value={t.d} label="Días" />
+              <CountBox value={t.h} label="Hrs" />
+              <CountBox value={t.m} label="Min" />
+              <CountBox value={t.s} label="Seg" />
+            </div>
+            <p className="mt-6 text-sm text-muted-foreground">
+              Para celebrar juntos el
               <br />
-              <span className="text-base text-muted-foreground">
-                En punto
+              <span className="font-display text-lg text-cocoa">
+                sábado 15 de agosto de 2026
               </span>
             </p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* LOCATION */}
-      <section className="reveal px-6 py-10 text-center">
-        <div className="paper-card relative overflow-hidden rounded-[28px] px-6 py-8">
-          <img
-            src={leaves}
-            alt=""
-            aria-hidden
-            className="pointer-events-none absolute -top-8 -right-8 h-32 w-32 opacity-40 leaf-anim"
-          />
-          <MapPin className="mx-auto h-8 w-8 text-sage-deep" strokeWidth={1.5} />
-          <h3 className="mt-3 font-display text-2xl text-cocoa">Ubicación</h3>
-          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-            3ra Privada 20 de Noviembre #5
-            <br />
-            Carrillo, Querétaro
+        {/* DATE & TIME */}
+        <section className="reveal px-6 py-8">
+          <p className="text-center text-xs uppercase tracking-[0.35em] text-sage-deep">
+            Guarda la fecha
           </p>
-          <a
-            href={MAPS_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-6 inline-flex items-center gap-2 rounded-full bg-sage px-7 py-3 text-sm font-medium uppercase tracking-[0.18em] text-cream shadow-[0_10px_25px_-10px_oklch(0.55_0.055_145_/0.55)] transition hover:-translate-y-0.5 hover:bg-sage-deep"
-          >
-            <MapPin className="h-4 w-4" /> Ver ubicación
-          </a>
-        </div>
-      </section>
-
-      <SectionDivider />
-
-      {/* SPECIAL MESSAGE */}
-      <section className="reveal px-6 py-10 text-center">
-        <div className="float-anim mx-auto w-full max-w-[260px]">
-          <img
-            src={babyGiraffe}
-            alt="Jirafita bebé acuarela"
-            width={900}
-            height={900}
-            className="mx-auto w-full drop-shadow-[0_18px_35px_oklch(0.55_0.055_145_/0.2)]"
-          />
-        </div>
-        <p className="mt-4 text-xs uppercase tracking-[0.35em] text-sage-deep">
-          Nuestra bebé
-        </p>
-        <h3 className="mt-2 font-display text-3xl leading-tight text-cocoa">
-          Una pequeña aventurera
-          <br /> está en camino
-        </h3>
-        <p className="mx-auto mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-          Con mucha ilusión esperamos la llegada de nuestra pequeña princesa y
-          queremos compartir este momento tan especial contigo.
-        </p>
-      </section>
-
-      {/* GIFT REGISTRIES */}
-      <section className="reveal px-6 py-10">
-        <div className="text-center">
-          <Gift className="mx-auto h-7 w-7 text-sage-deep" strokeWidth={1.5} />
-          <h3 className="mt-2 font-display text-3xl text-cocoa">Mesa de regalos</h3>
-          <p className="mx-auto mt-3 max-w-sm text-sm leading-relaxed text-muted-foreground">
-            El mejor regalo será tu presencia, pero si deseas consentir a nuestra
-            bebé, aquí te dejamos nuestras mesas de regalos.
-          </p>
-        </div>
-
-        <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {[
-            {
-              name: "Liverpool",
-              sub: "Mesa de regalos",
-              detail: "Evento #52016285",
-              url: LIVERPOOL_URL,
-            },
-            {
-              name: "Amazon",
-              sub: "Mesa de regalos",
-              detail: "Baby Registry",
-              url: AMAZON_URL,
-            },
-          ].map((r) => (
-            <div
-              key={r.name}
-              className="paper-card group flex flex-col items-center rounded-2xl p-6 text-center transition hover:-translate-y-1 hover:shadow-[0_25px_50px_-25px_oklch(0.55_0.055_145_/0.5)]"
-            >
-              <div className="grid h-14 w-14 place-items-center rounded-full bg-sage-soft text-sage-deep">
-                <Gift className="h-6 w-6" strokeWidth={1.5} />
-              </div>
-              <h4 className="mt-4 font-display text-2xl text-cocoa">{r.name}</h4>
-              <p className="mt-1 text-sm text-muted-foreground">{r.sub}</p>
-              <p className="text-xs text-sage-deep">{r.detail}</p>
-              <a
-                href={r.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center gap-2 rounded-full border border-sage/50 bg-cream px-5 py-2.5 text-xs font-medium uppercase tracking-[0.18em] text-sage-deep transition group-hover:bg-sage group-hover:text-cream"
-              >
-                Ir a mesa
-              </a>
+          <h2 className="mt-2 text-center font-display text-3xl text-cocoa">
+            Acompáñanos a celebrar
+          </h2>
+          <div className="mt-6 grid grid-cols-2 gap-4">
+            <div className="paper-card rounded-2xl p-5 text-center">
+              <Calendar className="mx-auto h-7 w-7 text-sage-deep" strokeWidth={1.5} />
+              <p className="mt-3 text-[11px] uppercase tracking-[0.25em] text-sage-deep">
+                Fecha
+              </p>
+              <p className="mt-2 font-display text-xl leading-tight text-cocoa">
+                Sábado
+                <br />
+                15 de agosto
+                <br />
+                <span className="text-base text-muted-foreground">2026</span>
+              </p>
             </div>
-          ))}
-        </div>
-      </section>
+            <div className="paper-card rounded-2xl p-5 text-center">
+              <Clock className="mx-auto h-7 w-7 text-sage-deep" strokeWidth={1.5} />
+              <p className="mt-3 text-[11px] uppercase tracking-[0.25em] text-sage-deep">
+                Hora
+              </p>
+              <p className="mt-2 font-display text-xl leading-tight text-cocoa">
+                3:00 PM
+                <br />
+                <span className="text-base text-muted-foreground">En punto</span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
 
-      <SectionDivider />
+      {/* LOCATION — blush band */}
+      <div className="band band-blush torn-bottom relative pt-8 pb-12">
+        <section className="reveal px-6 py-6 text-center">
+          <div className="paper-card relative overflow-hidden rounded-[28px] px-6 py-8">
+            <img
+              src={leaves}
+              alt=""
+              aria-hidden
+              className="pointer-events-none absolute -top-8 -right-8 h-32 w-32 opacity-40 leaf-anim"
+            />
+            <MapPin className="mx-auto h-8 w-8 text-sage-deep" strokeWidth={1.5} />
+            <h3 className="mt-3 font-display text-2xl text-cocoa">Ubicación</h3>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              3ra Privada 20 de Noviembre #5
+              <br />
+              Carrillo, Querétaro
+            </p>
+            <a
+              href={MAPS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-sage px-7 py-3 text-sm font-medium uppercase tracking-[0.18em] text-cream shadow-[0_10px_25px_-10px_oklch(0.55_0.055_145_/0.55)] transition hover:-translate-y-0.5 hover:bg-sage-deep"
+            >
+              <MapPin className="h-4 w-4" /> Ver ubicación
+            </a>
+          </div>
+        </section>
 
-      {/* RSVP */}
-      <section className="reveal px-6 py-10 text-center">
-        <div className="paper-card mx-auto rounded-[28px] px-6 py-10">
-          <Heart className="mx-auto h-7 w-7 text-sage-deep" strokeWidth={1.5} />
-          <h3 className="mt-3 font-display text-3xl text-cocoa">
-            Confirma tu asistencia
-          </h3>
-          <p className="mx-auto mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
-            Nos encantará compartir este momento contigo. Confirma antes del
-            <span className="text-cocoa"> 1 de agosto de 2026</span>.
+        {/* SPECIAL MESSAGE */}
+        <section className="reveal px-6 py-8 text-center">
+          <div className="float-anim mx-auto w-full max-w-[260px]">
+            <img
+              src={babyGiraffe}
+              alt="Jirafita bebé acuarela"
+              width={900}
+              height={900}
+              className="mx-auto w-full drop-shadow-[0_18px_35px_oklch(0.55_0.055_145_/0.2)]"
+            />
+          </div>
+          <p className="mt-4 text-xs uppercase tracking-[0.35em] text-sage-deep">
+            Nuestra bebé
           </p>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="pulse-anim mt-7 inline-flex items-center gap-2 rounded-full bg-sage-deep px-8 py-3.5 text-sm font-medium uppercase tracking-[0.18em] text-cream transition hover:-translate-y-0.5 hover:bg-sage"
-          >
-            <MessageCircle className="h-4 w-4" /> Confirmar por WhatsApp
-          </a>
-          <p className="mt-4 text-xs text-muted-foreground">442 748 2672</p>
-        </div>
-      </section>
+          <h3 className="mt-2 font-display text-3xl leading-tight text-cocoa">
+            Una pequeña aventurera
+            <br /> está en camino
+          </h3>
+          <p className="mx-auto mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
+            Con mucha ilusión esperamos la llegada de nuestra pequeña princesa y
+            queremos compartir este momento tan especial contigo.
+          </p>
+        </section>
+      </div>
 
-      {/* FINAL */}
-      <section className="reveal relative px-6 pt-8 pb-16 text-center">
-        <div className="float-anim">
-          <img
-            src={safariPanorama}
-            alt="Animales safari acuarela reunidos"
-            width={1600}
-            height={1008}
-            className="mx-auto w-full drop-shadow-[0_25px_45px_oklch(0.55_0.055_145_/0.25)]"
-          />
-        </div>
-        <h3 className="mt-4 font-script text-5xl text-sage-deep sm:text-6xl">
-          ¡Te esperamos!
-        </h3>
-        <p className="mx-auto mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-          Gracias por acompañarnos en este momento tan especial. Con cariño,
-        </p>
-        <p className="mt-2 font-display text-xl italic text-cocoa">
-          Mayra & Carlos
-        </p>
-      </section>
+      {/* GIFTS — sand band */}
+      <div className="band band-sand torn-bottom relative pt-8 pb-12">
+        <section className="reveal px-6 py-6">
+          <div className="text-center">
+            <Gift className="mx-auto h-7 w-7 text-sage-deep" strokeWidth={1.5} />
+            <h3 className="mt-2 font-display text-3xl text-cocoa">Mesa de regalos</h3>
+            <p className="mx-auto mt-3 max-w-sm text-sm leading-relaxed text-muted-foreground">
+              El mejor regalo será tu presencia, pero si deseas consentir a nuestra
+              bebé, aquí te dejamos nuestras mesas de regalos.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {[
+              {
+                name: "Liverpool",
+                sub: "Mesa de regalos",
+                detail: "Evento #52016285",
+                url: LIVERPOOL_URL,
+              },
+              {
+                name: "Amazon",
+                sub: "Mesa de regalos",
+                detail: "Baby Registry",
+                url: AMAZON_URL,
+              },
+            ].map((r) => (
+              <div
+                key={r.name}
+                className="paper-card group flex flex-col items-center rounded-2xl p-6 text-center transition hover:-translate-y-1 hover:shadow-[0_25px_50px_-25px_oklch(0.55_0.055_145_/0.5)]"
+              >
+                <div className="grid h-14 w-14 place-items-center rounded-full bg-sage-soft text-sage-deep">
+                  <Gift className="h-6 w-6" strokeWidth={1.5} />
+                </div>
+                <h4 className="mt-4 font-display text-2xl text-cocoa">{r.name}</h4>
+                <p className="mt-1 text-sm text-muted-foreground">{r.sub}</p>
+                <p className="text-xs text-sage-deep">{r.detail}</p>
+                <a
+                  href={r.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex items-center gap-2 rounded-full border border-sage/50 bg-cream px-5 py-2.5 text-xs font-medium uppercase tracking-[0.18em] text-sage-deep transition group-hover:bg-sage group-hover:text-cream"
+                >
+                  Ir a mesa
+                </a>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+
+      {/* RSVP + FINAL — sage band */}
+      <div className="band band-sage relative pt-10 pb-6">
+        <section className="reveal px-6 py-6 text-center">
+          <div className="paper-card mx-auto rounded-[28px] px-6 py-10">
+            <Heart className="mx-auto h-7 w-7 text-sage-deep" strokeWidth={1.5} />
+            <h3 className="mt-3 font-display text-3xl text-cocoa">
+              Confirma tu asistencia
+            </h3>
+            <p className="mx-auto mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
+              Nos encantará compartir este momento contigo. Confirma antes del
+              <span className="text-cocoa"> 1 de agosto de 2026</span>.
+            </p>
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pulse-anim mt-7 inline-flex items-center gap-2 rounded-full bg-sage-deep px-8 py-3.5 text-sm font-medium uppercase tracking-[0.18em] text-cream transition hover:-translate-y-0.5 hover:bg-sage"
+            >
+              <MessageCircle className="h-4 w-4" /> Confirmar por WhatsApp
+            </a>
+            <p className="mt-4 text-xs text-muted-foreground">442 748 2672</p>
+          </div>
+        </section>
+
+        <section className="reveal relative px-6 pt-8 pb-12 text-center">
+          <div className="float-anim">
+            <img
+              src={safariPanorama}
+              alt="Animales safari acuarela reunidos"
+              width={1600}
+              height={1008}
+              className="mx-auto w-full drop-shadow-[0_25px_45px_oklch(0.55_0.055_145_/0.25)]"
+            />
+          </div>
+          <h3 className="mt-4 font-script text-5xl text-sage-deep sm:text-6xl">
+            ¡Te esperamos!
+          </h3>
+          <p className="mx-auto mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
+            Gracias por acompañarnos en este momento tan especial. Con cariño,
+          </p>
+          <p className="mt-2 font-display text-xl italic text-cocoa">
+            Mayra & Carlos
+          </p>
+        </section>
+      </div>
     </main>
   );
 }
+
