@@ -136,7 +136,10 @@ function Invitation() {
       </section>
 
       {/* COUNTDOWN */}
-      <section className="reveal px-6 py-10 text-center">
+      <section
+        className="reveal relative bg-cover bg-center bg-no-repeat px-6 py-14 text-center"
+        style={{ backgroundImage: `url(${tornPaper})` }}
+      >
         <div className="paper-card mx-auto rounded-[28px] px-6 py-8">
           <p className="font-display text-2xl italic text-sage-deep">Sólo faltan</p>
           <div className="mt-5 flex justify-center gap-2 sm:gap-3">
