@@ -3,8 +3,9 @@ import { useEffect, useRef, useState } from "react";
 import { MapPin, Calendar, Clock, Gift, MessageCircle, Heart } from "lucide-react";
 import heroAnimals from "@/assets/hero-animals.png";
 import babyGiraffe from "@/assets/baby-giraffe.png";
-import safariPanorama from "@/assets/safari-panorama.png";
+import foxStump from "@/assets/fox-stump.png";
 import leaves from "@/assets/leaves-decoration.png";
+import tornPaper from "@/assets/torn-paper.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -135,7 +136,10 @@ function Invitation() {
       </section>
 
       {/* COUNTDOWN */}
-      <section className="reveal px-6 py-10 text-center">
+      <section
+        className="reveal relative bg-cover bg-center bg-no-repeat px-6 py-14 text-center"
+        style={{ backgroundImage: `url(${tornPaper})` }}
+      >
         <div className="paper-card mx-auto rounded-[28px] px-6 py-8">
           <p className="font-display text-2xl italic text-sage-deep">Sólo faltan</p>
           <div className="mt-5 flex justify-center gap-2 sm:gap-3">
@@ -299,7 +303,10 @@ function Invitation() {
       <SectionDivider />
 
       {/* RSVP */}
-      <section className="reveal px-6 py-10 text-center">
+      <section
+        className="reveal relative bg-cover bg-center bg-no-repeat px-6 py-14 text-center"
+        style={{ backgroundImage: `url(${tornPaper})` }}
+      >
         <div className="paper-card mx-auto rounded-[28px] px-6 py-10">
           <Heart className="mx-auto h-7 w-7 text-sage-deep" strokeWidth={1.5} />
           <h3 className="mt-3 font-display text-3xl text-cocoa">
@@ -325,11 +332,11 @@ function Invitation() {
       <section className="reveal relative px-6 pt-8 pb-16 text-center">
         <div className="float-anim">
           <img
-            src={safariPanorama}
-            alt="Animales safari acuarela reunidos"
-            width={1600}
-            height={1008}
-            className="mx-auto w-full drop-shadow-[0_25px_45px_oklch(0.55_0.055_145_/0.25)]"
+            src={foxStump}
+            alt="Zorrito bebé acuarela sobre tronco"
+            width={1024}
+            height={1536}
+            className="mx-auto w-full max-w-[360px] drop-shadow-[0_25px_45px_oklch(0.55_0.055_145_/0.25)]"
           />
         </div>
         <h3 className="mt-4 font-script text-5xl text-sage-deep sm:text-6xl">
