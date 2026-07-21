@@ -108,7 +108,7 @@ function Invitation() {
       {/* HERO */}
       <section
         ref={heroRef}
-        className="relative flex flex-col items-center px-6 pt-14 pb-8 text-center"
+        className="relative flex flex-col items-center px-6 pt-14 pb-0 text-center"
       >
         <div className="animate-[rise-in_1s_ease-out_both]">
           <h1 className="font-display text-6xl font-light uppercase tracking-[0.35em] text-sage-deep sm:text-7xl">
@@ -124,13 +124,13 @@ function Invitation() {
           <span className="h-px w-10 bg-sage/50" />
         </div>
 
-        <div className="relative mt-6 w-full float-anim">
+        <div className="relative mt-6 -mb-8 w-[115%] float-anim sm:-mb-12">
           <img
             src={heroAnimals}
             alt="Animales safari acuarela"
             width={1408}
             height={912}
-            className="mx-auto w-full max-w-[460px] drop-shadow-[0_20px_40px_oklch(0.55_0.055_145_/0.25)]"
+            className="mx-auto block w-full drop-shadow-[0_20px_40px_oklch(0.55_0.055_145_/0.25)]"
           />
         </div>
       </section>
