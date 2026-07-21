@@ -303,7 +303,10 @@ function Invitation() {
       <SectionDivider />
 
       {/* RSVP */}
-      <section className="reveal px-6 py-10 text-center">
+      <section
+        className="reveal relative bg-cover bg-center bg-no-repeat px-6 py-14 text-center"
+        style={{ backgroundImage: `url(${tornPaper})` }}
+      >
         <div className="paper-card mx-auto rounded-[28px] px-6 py-10">
           <Heart className="mx-auto h-7 w-7 text-sage-deep" strokeWidth={1.5} />
           <h3 className="mt-3 font-display text-3xl text-cocoa">
