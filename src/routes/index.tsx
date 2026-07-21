@@ -326,11 +326,11 @@ function Invitation() {
       <section className="reveal relative px-6 pt-8 pb-16 text-center">
         <div className="float-anim">
           <img
-            src={safariPanorama}
-            alt="Animales safari acuarela reunidos"
-            width={1600}
-            height={1008}
-            className="mx-auto w-full drop-shadow-[0_25px_45px_oklch(0.55_0.055_145_/0.25)]"
+            src={foxStump}
+            alt="Zorrito bebé acuarela sobre tronco"
+            width={1024}
+            height={1536}
+            className="mx-auto w-full max-w-[360px] drop-shadow-[0_25px_45px_oklch(0.55_0.055_145_/0.25)]"
           />
         </div>
         <h3 className="mt-4 font-script text-5xl text-sage-deep sm:text-6xl">
