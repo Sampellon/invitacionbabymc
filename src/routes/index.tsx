@@ -5,7 +5,7 @@ import heroAnimals from "@/assets/hero-animals.png";
 import babyGiraffe from "@/assets/baby-giraffe.png";
 import foxStump from "@/assets/fox-stump.png";
 import leaves from "@/assets/leaves-decoration.png";
-import tornPaper from "@/assets/torn-paper.png";
+import tornPaper from "@/assets/torn-paper.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
