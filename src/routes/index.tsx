@@ -5,7 +5,7 @@ import heroAnimals from "@/assets/hero-animals.png";
 import babyGiraffe from "@/assets/baby-giraffe.png";
 import foxStump from "@/assets/fox-stump.png";
 import leaves from "@/assets/leaves-decoration.png";
-import tornPaper from "@/assets/torn-paper.png.asset.json";
+import tornPaper from "@/assets/fondo-verde.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -124,7 +124,7 @@ function Invitation() {
           <span className="h-px w-10 bg-sage/50" />
         </div>
 
-        <div className="relative mt-6 -mb-8 w-[115%] float-anim sm:-mb-12">
+        <div className="relative mt-6 -mb-16 w-[115%] float-anim sm:-mb-20">
           <img
             src={heroAnimals}
             alt="Animales safari acuarela"
