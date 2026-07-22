@@ -138,7 +138,7 @@ function Invitation() {
       {/* COUNTDOWN */}
       <section
         className="reveal relative bg-cover bg-center bg-no-repeat px-6 py-14 text-center"
-        style={{ backgroundImage: `url(${tornPaper.url})` }}
+        style={{ backgroundImage: `url(${tornPaper})` }}
       >
         <div className="paper-card mx-auto rounded-[28px] px-6 py-8">
           <p className="font-display text-2xl italic text-sage-deep">Sólo faltan</p>
@@ -305,7 +305,7 @@ function Invitation() {
       {/* RSVP */}
       <section
         className="reveal relative bg-cover bg-center bg-no-repeat px-6 py-14 text-center"
-        style={{ backgroundImage: `url(${tornPaper.url})` }}
+        style={{ backgroundImage: `url(${tornPaper})` }}
       >
         <div className="paper-card mx-auto rounded-[28px] px-6 py-10">
           <Heart className="mx-auto h-7 w-7 text-sage-deep" strokeWidth={1.5} />
