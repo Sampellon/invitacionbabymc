@@ -324,7 +324,6 @@ function Invitation() {
           >
             <MessageCircle className="h-4 w-4" /> Confirmar por WhatsApp
           </a>
-          <p className="mt-4 text-xs text-muted-foreground">442 748 2672</p>
         </div>
       </section>
 
